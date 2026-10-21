@@ -1,0 +1,15 @@
+[project]
+name = "huffman"
+version = "1.0.0"
+description = "Canonical Huffman file compression with bit-level I/O and a CLI"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+huffman = "huffman.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
